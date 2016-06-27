@@ -20,5 +20,6 @@ public class Eg5_6_TestDoWhile {
         }while (data!=0);
 
         System.out.print("The sum is "+sum);
+
     }
 }
