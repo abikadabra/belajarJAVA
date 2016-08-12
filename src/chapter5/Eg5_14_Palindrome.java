@@ -12,11 +12,11 @@ public class Eg5_14_Palindrome {
         System.out.print("Enter a string: ");
         String s = input.nextLine();
         int low = 0;
-        int high = s.length()-1;
+        int high = s.length();
 
         boolean isPalindrome = true;
-        while (low<high){
-            if (s.charAt(low) !=s.charAt(high)){
+        while (low < high) {
+            if (s.charAt(low) != s.charAt(high)) {
                 isPalindrome = false;
                 break;
             }
