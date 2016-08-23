@@ -14,6 +14,8 @@ public class eg7_2_DeckOfCards {
         for (int i = 0; i < deck.length; i++) {
             deck[i] = i;
         }
+
+        //shuffle the cards
         for (int i = 0; i < deck.length; i++) {
             int index = (int)(Math.random()*deck.length);
             int temp = deck[i];
@@ -21,6 +23,7 @@ public class eg7_2_DeckOfCards {
             deck[index] = temp;
         }
 
+        //display the first four cards
         for (int i = 0; i < 4;i++) {
             String suit = suits[deck[i]/13];
             String rank = ranks[deck[i]%13];
