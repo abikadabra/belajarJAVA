@@ -7,7 +7,9 @@ public class Eg7_8_SelectionSort {
     public static void main(String[] args) {
         double[] list = {1, 9, 4.5, 6.6, 5.7, -4.5};
         selectionSort(list);
-        System.out.println(list[0]);
+        for (double value:list){
+            System.out.print(value+" ");
+        }
     }
 
 
