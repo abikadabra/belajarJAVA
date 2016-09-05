@@ -29,19 +29,20 @@ public class Ex7_20_ReviseSelectionSort {
     }
 
     public static void selectionSort(double[] number) {
-        for (int i = 0; i < number.length - 1; i++) {
-            double currentMin = number[i];
-            int currentMinIndex = i;
+        for (int i = number.length - 1; i > 0; i--) {
 
-            for (int k = i + 1; k < number.length; k++) {
-                if (currentMin > number[k]) {
-                    currentMin = number[k];
-                    currentMinIndex = k;
+            double currentMax = number[i];
+            int currentMaxIndex = i;
+
+            for (int k = 0; k < i; k++) {
+                if (currentMax < number[k]) {
+                    currentMax = number[k];
+                    currentMaxIndex = k;
                 }
             }
-            if (currentMinIndex != i) {
-                number[currentMinIndex] = number[i];
-                number[i] = currentMin;
+            if (currentMaxIndex != i) {
+                number[currentMaxIndex] = number[i];
+                number[i] = currentMax;
             }
         }
     }
